@@ -630,3 +630,38 @@ footer .logo {
     .stats { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
 }
+
+/* About images layout */
+.about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-img-third {
+    width: 260px;
+    height: 260px;
+}
+
+.about-img-third .about-img {
+    border: 3px solid transparent;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(135deg, var(--accent), var(--primary)) border-box;
+}
+
+.about-ring-alt {
+    border-color: rgba(255, 42, 109, 0.2);
+    animation: pulse 3s ease-in-out infinite reverse;
+}
+
+/* Mobile: about images */
+@media (max-width: 900px) {
+    .about-images {
+        gap: 30px;
+    }
+    .about-img-third {
+        width: 220px;
+        height: 220px;
+    }
+}
